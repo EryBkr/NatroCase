@@ -7,6 +7,7 @@
 - **Cache Yönetimi**: `Redis` ve optional `InMemoryCache` mevcuttur.
 - **Performans İyileştirmeleri**: `RDAP` sorgulama işlemleri sırasında performans kazanımı için in-memory notification'lar aracılığıyla database'e ekleme işlemi uygulandı.
 - **Generic Yapılar**: (Pipeline, Security, Exception Handling vb.) ayrı bir projede DLL olarak kullanıldı. İncelemek isteyebilirsiniz düşüncesiyle henüz NuGet paketi haline getirilmemiştir.
+- **Logging**: `Serilog Sinks` ile iseğe bağlı file/db log yapılabilebilmektedir
 
 ## Yapılabilecekler
 - **Proje Süreci**: Yoğun bir süreç yaşadık firma içerisinde, hafta sonları ve 29 Ekim tarihlerinde çalışmam gerekti. Fırsat buldukça ilerlemeye çalıştım. Baştan savma olmaması açısından, ayırabildiğim zamanı en azından doğru ve titiz bir şekilde harcamaya gayret gösterdim.
