@@ -1,4 +1,4 @@
-# Proje Adı
+# Natro Case Study
 
 ## Yapılanlar
 - **Dinamik Sorgu Ekleme**: UI için dinamik sorgulama özellikleri eklendi; pagination, sorting ve filtering özellikleri mevcuttur.
