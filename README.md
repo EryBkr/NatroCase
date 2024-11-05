@@ -17,7 +17,7 @@
 - **Elastic Search**: Domain'ler `Elastic`'e eklenip oradan sorgulanabilirdi.
 
 ## Kullanım
-Mail ile size Postman Collection da ileteceğim. Temel davranış, login olduktan sonra (`UserName: adminuser`, `Password: adminuser` proje ayağa kalktığında otomatik oluşacaktır) `domaincheck` endpoint'i ile  domain sorgulanır. Kullanıcı isterse `AddFavoriteDomain` endpoint'i ile favorilerine ekleyebilir. Silme ve dynamic query servisleri de mevcuttur.
+Postman Collection için https://file.io/giE58xcavUH7. Temel davranış, login olduktan sonra (`UserName: adminuser`, `Password: adminuser` proje ayağa kalktığında otomatik oluşacaktır) `domaincheck` endpoint'i ile  domain sorgulanır. Kullanıcı isterse `AddFavoriteDomain` endpoint'i ile favorilerine ekleyebilir. Silme ve dynamic query servisleri de mevcuttur.
 
 ## İletişim
 Sorularınız olursa benimle iletişime geçebilirsiniz.
