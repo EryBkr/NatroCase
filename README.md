@@ -17,10 +17,11 @@
 - **Elastic Search**: Domain'ler `Elastic`'e eklenip oradan sorgulanabilirdi.
 
 ## Kullanım
-Postman Collection için https://file.io/giE58xcavUH7. Temel davranış, login olduktan sonra (`UserName: adminuser`, `Password: adminuser` proje ayağa kalktığında otomatik oluşacaktır) `domaincheck` endpoint'i ile  domain sorgulanır. Kullanıcı isterse `AddFavoriteDomain` endpoint'i ile favorilerine ekleyebilir. Silme ve dynamic query servisleri de mevcuttur.
+Postman Collection için (güncellendi,filter yapısı,paginiation etc... kaydedildi) [https://file.io/giE58xcavUH7](https://file.io/2Mk9vUvpQQ84). Temel davranış, login olduktan sonra (`UserName: adminuser`, `Password: adminuser` proje ayağa kalktığında otomatik oluşacaktır) `domaincheck` endpoint'i ile  domain sorgulanır. Kullanıcı isterse `AddFavoriteDomain` endpoint'i ile favorilerine ekleyebilir. Silme ve dynamic query servisleri de mevcuttur.
 
 ## İletişim
 Sorularınız olursa benimle iletişime geçebilirsiniz.
 
 ## Not
-Dockerize etmeye çalıştım fakat bugün de biraz yoğunum. Gün içerisinde boşluk bulursam Dockerfile düzenlemesi için commit atacağım ve README'ye son durumu ekleyeceğim.
+~~Dockerize etmeye çalıştım fakat bugün de biraz yoğunum. Gün içerisinde boşluk bulursam Dockerfile düzenlemesi için commit atacağım ve README'ye son durumu ekleyeceğim.~~
+src içerisinde `docker-compose up --build -d` komutuyla redis,mssql ve webapi projelerini ayağa kaldırabilirsiniz, baseurl postmane girilmiştir (`http://localhost:5000`)
