@@ -24,4 +24,5 @@ Sorularınız olursa benimle iletişime geçebilirsiniz.
 
 ## Not
 ~~Dockerize etmeye çalıştım fakat bugün de biraz yoğunum. Gün içerisinde boşluk bulursam Dockerfile düzenlemesi için commit atacağım ve README'ye son durumu ekleyeceğim.~~
+
 src içerisinde `docker-compose up --build -d` komutuyla redis,mssql ve webapi projelerini ayağa kaldırabilirsiniz, baseurl postmane girilmiştir (`http://localhost:5000`)
