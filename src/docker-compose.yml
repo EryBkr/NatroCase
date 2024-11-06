@@ -7,9 +7,10 @@ services:
       context: .
       dockerfile: project/NProject/WebApi/Dockerfile
     ports:
-      - "8080:80"
+      - "5000:5000"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000
+      - ASPNETCORE_ENVIRONMENT=Release
       - ConnectionStrings__NProjectConnection=Server=mssql;Database=NProjectDB;User=sa;Password=yourStrong(!)Password;TrustServerCertificate=True;
       - CacheSettings__SlidingExpiration=2
       - SerilogLogConfigurations__FileLogConfiguration__FolderPath=/logs/

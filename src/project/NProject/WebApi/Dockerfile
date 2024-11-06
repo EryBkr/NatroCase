@@ -10,11 +10,7 @@ COPY ["project/NProject/Application/Application.csproj", "project/NProject/Appli
 COPY ["project/NProject/Domain/Domain.csproj", "project/NProject/Domain/"]
 COPY ["project/NProject/Infrastructure/Infrastructure.csproj", "project/NProject/Infrastructure/"]
 COPY ["project/NProject/Persistence/Persistence.csproj", "project/NProject/Persistence/"]
-COPY ["core-packages/Core.Packages/Core.Application/Core.Application.csproj", "core-packages/Core.Packages/Core.Application/"]
-COPY ["core-packages/Core.Packages/Core.CrossCuttingConcerns/Core.CrossCuttingConcerns.csproj", "core-packages/Core.Packages/Core.CrossCuttingConcerns/"]
-COPY ["core-packages/Core.Packages/Core.Persistence/Core.Persistence.csproj", "core-packages/Core.Packages/Core.Persistence/"]
-COPY ["core-packages/Core.Packages/Core.Polly/Core.Polly.csproj", "core-packages/Core.Packages/Core.Polly/"]
-COPY ["core-packages/Core.Packages/Core.SecurityIdentity/Core.SecurityIdentity.csproj", "core-packages/Core.Packages/Core.SecurityIdentity/"]
+
 RUN dotnet restore "project/NProject/WebApi/WebApi.csproj"
 COPY . .
 WORKDIR "/src/project/NProject/WebApi"
@@ -26,4 +22,5 @@ RUN dotnet publish "WebApi.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+ENV ASPNETCORE_URLS = "http://*:5000"
 ENTRYPOINT ["dotnet", "WebApi.dll"]
